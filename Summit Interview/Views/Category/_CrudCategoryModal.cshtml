@@ -1,0 +1,27 @@
+﻿@using Models.Model
+@model Category;
+
+<div class="modal fade" id="categoryCrudModal" tabindex="-1" aria-labelledby="categoryCrudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" style="margin-top: 100px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="categoryCrudModalLabel">Create Category</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="categoryCrudForm" class="row" enctype="multipart/form-data" method="post">
+                <div class="modal-body px-4 py-2">
+                    <input id="category_id" hidden readonly asp-for="Id" />
+                    <div class="form-floating">
+                        <input id="category_name" class="form-control" asp-for="Name" placeholder="Enter a category name" />
+                        <label asp-for="Name" class="mb-2"></label>
+                        <span id="name_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button onclick="clearInput(this)" style="margin-right: 8px;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

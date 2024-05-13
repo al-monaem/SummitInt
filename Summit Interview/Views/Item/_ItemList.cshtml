@@ -1,0 +1,76 @@
+﻿@using Models.Model;
+@using Models.ResponseEntity;
+@model DataResponse<Item>;
+
+<div class="d-flex flex-column align-items-center justify-content-center" style="gap: 20px;">
+    <div class ="d-flex row" style="gap: 20px; width: 100%;">
+        @{
+            if (Model.List.Count > 0)
+            {
+                foreach (var item in Model.List)
+                {
+                            <a class="card item-card" href="Item/Details/@item.Id" style="width: 13rem; height: 20rem;">
+                                <div style="height: 150px; padding: 10px 0px;">
+                                    @{
+                                if (item.ItemImages.Count > 0)
+                                {
+                                                    <img style="height: 150px" class="card-img-top" src="@Url.Content(item.ItemImages[0]?.ImageURL)" alt="Card image cap">
+                                }
+                                else
+                                {
+                                                    <img style="height: 150px" class="card-img-top" src="@Url.Content("images/not_found.jpg")" alt="Card image cap">
+                                }
+                                    }
+                                </div>
+                                <div class="card-body" style="overflow: hidden; height: 200px; padding-left: 0px; padding-right: 0px;">
+                                    <h5 class="card-title">@item.ItemName</h5>
+                                    <div style="text-overflow: ellipsis;">
+                                        @Html.Raw(@item.ItemDescription)
+                                    </div>
+                                </div>
+                            </a>
+                }
+            }
+            else
+            {
+                        <div class="align-items-center justify-content-center d-flex flex-column">
+                            <div><img style="width: 20vw;" src="~/images/no_data_found.jpg" /></div>
+                            <h4>No data available</h4>
+                        </div>
+            }
+        }
+    </div>
+    <div id="paginator">
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(() => {
+        generatePaginationHTML();
+    })
+
+    function generatePaginationHTML() {
+        const pagination = @Json.Serialize(Model.Pagination);
+        let html = '<div class="pagination d-flex gap-3">';
+        const totalPages = pagination.totalPage;
+        const currentPage = pagination.page;
+
+        // Previous Button
+        html += `<button class="btn btn-info ${currentPage === 1 || !pagination.totalPage ? "disabled" : ""}" onclick="paginate(' + (currentPage > 1 ? currentPage - 1 : 1) + ')">Previous</button>`;
+
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, startPage + 4);
+
+        for (let i = startPage; i <= endPage; i++) {
+            html += '<button' + (i === currentPage || !pagination.totalPage ? ' class="disabled btn btn-primary"' : ' class="btn btn-info"') + ' onclick="paginate(' + i + ')">' + i + '</button>';
+        }
+
+        // Next Button
+        html += `<button class="btn btn-info ${currentPage === totalPages || !pagination.totalPage ? "disabled" : ""}" onclick="paginate(' + (currentPage < totalPages ? currentPage + 1 : totalPages) + ')">Next</button>`;
+
+        html += '</div>';
+        
+        $("#paginator").html(html);
+    }
+</script>

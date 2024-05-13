@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Summit Interview.props" />
+</Project>

@@ -1,0 +1,89 @@
+﻿@using Models.Model
+@model Item;
+
+<div class="modal modal-lg fade" id="itemCrudModal" tabindex="-1" aria-labelledby="itemCrudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" style="margin-top: 100px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="itemCrudModalLabel">Create Item</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="itemCrudForm" class="row" enctype="multipart/form-data" method="post">
+                <div class="modal-body px-4 py-2">
+                    <input id="category_id" hidden readonly asp-for="Id" />
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input id="item_name" class="form-control" asp-for="ItemName" asp placeholder="Enter item name" />
+                                <label asp-for="ItemName" class="mb-2"></label>
+                                <span id="item_name_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <select id="item_unit" class="form-control" asp-for="ItemUnit">
+                                    @{
+                                        foreach(var option in ViewBag.UnitTypes)
+                                        {
+                                            <option value="@option">@option</option>
+                                        }
+                                    }
+                                </select>
+                                <label asp-for="ItemUnit" class="mb-2"></label>
+                                <span id="item_unit_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="number" id="item_quantity" class="form-control" asp-for="ItemQuantity" asp placeholder="Enter item quantity" />
+                                <label asp-for="ItemQuantity" class="mb-2"></label>
+                                <span id="item_quantity_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <select id="category" class="form-control" asp-for="Category" placeholder="Select category">
+                                </select>
+                                <label asp-for="Category" class="mb-2"></label>
+                                <span id="category_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <textarea style="padding-top: 10px;" asp-for="ItemDescription"></textarea>
+                                <label asp-for="ItemDescription" class="mb-2"></label>
+                            </div>
+                            <span id="item_images_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <div id="custom-file-upload" style="" class="custom-file-upload">
+                                    <div class="form-control py-5 d-flex flex-column align-items-center justify-content-center">
+                                        <div>Drag & Drop Images</div>
+                                        <div>or</div>
+                                        <button id="customFileUploadBtn" type="button" class="btn btn-info">Browse Files</button>
+                                    </div>
+                                    <input multiple accept=".png,.jpg,.jpeg" style="position: absolute; z-index: 10; height: 100%; visibility: hidden;" type="file" id="item_images" class="form-control" asp-for="ItemImages" asp placeholder="Enter item images" />
+                                </div>
+                                @* <label asp-for="ItemImages" class="mb-2"></label> *@
+                                <span id="item_quantity_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                            </div>
+                            <span id="item_images_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div id="previewRow" class="px-2 d-flex"></div>
+                    <div class="d-flex justify-content-end">
+                        <button onclick="clearInput(this)" style="margin-right: 8px;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

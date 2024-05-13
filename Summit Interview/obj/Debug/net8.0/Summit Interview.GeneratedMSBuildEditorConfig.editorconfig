@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Summit_Interview
+build_property.RootNamespace = Summit_Interview
+build_property.ProjectDir = G:\Projects\Summit Interview\Summit Interview\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = G:\Projects\Summit Interview\Summit Interview
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Category/_CrudCategoryModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX0NydWRDYXRlZ29yeU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Item/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Item/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Item/_BulkUploadModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxfQnVsa1VwbG9hZE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Item/_CrudItemModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxfQ3J1ZEl0ZW1Nb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Item/_EditItemModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxfRWRpdEl0ZW1Nb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Item/_ItemList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxfSXRlbUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Projects/Summit Interview/Summit Interview/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qq3izlpmu7

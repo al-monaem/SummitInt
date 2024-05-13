@@ -1,0 +1,47 @@
+﻿<div class="py-4 px-4 flex-grow-1">
+    <div class="d-flex justify-content-between align-content-center mb-4">
+        <h2>Items</h2>
+        <div class="d-flex align-items-center justify-content-center gap-3">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true" data-bs-auto-close="outside">
+                    Filter
+                </button>
+                <form id="filterForm" class="dropdown-menu p-3" style="width: 300px">
+                    <div class="mb-3">
+                        <label for="itemName" class="form-label col-form-label-sm" style="font-weight: 600">Item Name</label>
+                        <input type="text" class="form-control form-control-sm" id="itemName" placeholder="Enter Item Name">
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="mb-3">
+                        <label for="itemCategory" class="form-label col-form-label-sm" style="font-weight: 600">Item Category</label>
+                        <input type="text" class="form-control form-control-sm" id="itemCategory" placeholder="Enter Item Category">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+            </div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itemCrudModal">Create Item</button>
+            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#bulkUploadModal">Bulk Upload</button>
+        </div>
+    </div>
+    <div id="item_list" class="row">
+        
+    </div>
+
+    <partial name="_CrudItemModal" />
+    <partial name="_BulkUploadModal"/>
+</div>
+
+@section Scripts {
+    <script src="~/js/item.js"></script>
+    <script src="~/js/file-upload.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            menubar: false,
+            statusbar: false,
+            plugins: 'anchor autolink charmap codesample emoticons link lists searchreplace table visualblocks wordcount mediaembed casechange formatpainter',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+        });
+    </script>
+}

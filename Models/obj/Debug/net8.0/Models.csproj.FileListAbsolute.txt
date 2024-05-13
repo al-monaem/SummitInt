@@ -1,0 +1,15 @@
+G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Models.deps.json
+G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Models.dll
+G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Models.pdb
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.dll
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\refint\Models.dll
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.pdb
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\ref\Models.dll
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
+G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Utility.dll
+G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Utility.pdb
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.csproj.Up2Date

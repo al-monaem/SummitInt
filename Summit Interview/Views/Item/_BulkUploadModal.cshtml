@@ -1,0 +1,37 @@
+﻿@using Models.Model
+@model Item;
+
+<div class="modal fade" id="bulkUploadModal" tabindex="-1" aria-labelledby="bulkUploadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" style="margin-top: 100px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="bulkUploadModalLabel">Upload File</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="fileUploadForm" class="row" enctype="multipart/form-data" method="post">
+                <div class="modal-body px-4 py-2">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <div id="custom-file-upload" style="" class="custom-file-upload">
+                                    <div class="form-control py-5 d-flex flex-column align-items-center justify-content-center">
+                                        <div>Drag & Drop File</div>
+                                        <div>or</div>
+                                        <button id="fileUploadBtn" type="button" class="btn btn-info">Browse File</button>
+                                    </div>
+                                    <input accept=".xls,.xlsx" style="position: absolute; z-index: 10; height: 100%; visibility: hidden;" type="file" id="file_input" class="form-control" />
+                                </div>
+                                <span id="item_quantity_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="previewFile" class="row px-2"></div>
+                    <div class="d-flex justify-content-end">
+                        <button onclick="clearFile()" style="margin-right: 8px;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

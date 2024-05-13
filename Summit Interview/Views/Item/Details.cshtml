@@ -1,0 +1,74 @@
+﻿@using Models.Model
+@model Item;
+
+<head>
+    <link rel="stylesheet" href="~/css/item-details.css" />
+</head>
+
+<div class="d-flex flex-column flex-grow-1 p-5">
+    <div class="d-flex">
+        <div class="col-md d-flex align-items-center justify-content-center">
+            <div id="item-carousel">
+                <ul id="lightSlider" style="260px">
+                    @if (Model.ItemImages.Count > 0)
+                    {
+                        foreach (var image in Model.ItemImages)
+                        {
+                            <li class="img-thumbnail" data-thumb="/@image.ImageURL">
+                                <img src="/@image.ImageURL" />
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li><img data-thumb="/images/not_found.jpg" src="/images/not_found.jpg" alt="Card image cap"></li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="col-md">
+            <h4>@Model.ItemName</h4>
+            <div style="max-height: 200px; overflow-y: auto;">
+                @Html.Raw(@Model.ItemDescription)
+            </div>
+            <h6>Category: <span class="badge badge-info">@Model.Category?.Name</span></h6>
+            <h6>Unit: <span class="badge badge-info">@Model.ItemUnit</span></h6>
+            <h6>Quantity: @Model.ItemQuantity</h6>
+            <div class="mt-4">
+                <button type="button" class="btn btn-primary">Add to cart</button>
+                <button onclick="handleEditModal('@Model.Category.Name', @Model.CategoryId)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#itemEditModal">Edit Item</button>
+                <button type="button" onclick="handleDeleteItem(@Model.Id)" class="btn btn-danger">Delete Item</button>
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <partial name="_EditItemModal" />
+</div>
+
+@section Scripts {
+    <script src="/js/lightslider.js"></script>
+    <script src="/js/item-details.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            menubar: false,
+            statusbar: false,
+            plugins: 'anchor autolink charmap codesample emoticons link lists searchreplace table visualblocks wordcount mediaembed casechange formatpainter',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+        });
+    </script>
+    <script>
+        function handleEditModal(categoryName, categoryId) {
+            make_select.addOption({
+                value: categoryId,
+                text: categoryName,
+            });
+            make_select.setValue(categoryId);
+            var itemImages = @Json.Serialize(Model.ItemImages.Select(item => item.ImageURL).ToList());
+            existingImages = itemImages;
+            previewImage(existingImages);
+        }
+    </script>
+}

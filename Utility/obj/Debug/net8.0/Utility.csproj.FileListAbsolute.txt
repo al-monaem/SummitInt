@@ -1,0 +1,11 @@
+G:\Projects\Summit Interview\Utility\bin\Debug\net8.0\Utility.deps.json
+G:\Projects\Summit Interview\Utility\bin\Debug\net8.0\Utility.dll
+G:\Projects\Summit Interview\Utility\bin\Debug\net8.0\Utility.pdb
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\Utility.AssemblyInfoInputs.cache
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\Utility.AssemblyInfo.cs
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\Utility.csproj.CoreCompileInputs.cache
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\Utility.dll
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\refint\Utility.dll
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\Utility.pdb
+G:\Projects\Summit Interview\Utility\obj\Debug\net8.0\ref\Utility.dll

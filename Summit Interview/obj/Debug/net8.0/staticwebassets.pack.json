@@ -1,0 +1,465 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Summit Interview.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Summit Interview.bundle.scp.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\item-details.css",
+      "PackagePath": "staticwebassets\\css\\item-details.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\lightslider.css",
+      "PackagePath": "staticwebassets\\css\\lightslider.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\0a7a8e16-5407-4914-ad01-06d3257bae1c.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\0a7a8e16-5407-4914-ad01-06d3257bae1c.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\0ed09c5d-d311-403d-b02d-78807eaaa574.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\0ed09c5d-d311-403d-b02d-78807eaaa574.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\0f05ad71-3d24-4119-afa1-acdeee84567c.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\0f05ad71-3d24-4119-afa1-acdeee84567c.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\2dc84aee-4b4f-4274-9126-997a745f8be5.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\2dc84aee-4b4f-4274-9126-997a745f8be5.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\4f752ef6-fd9b-4db3-9566-0a9030f2e1b8.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\4f752ef6-fd9b-4db3-9566-0a9030f2e1b8.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\5c4428b7-9a7b-4871-ad5c-536c4bbc82dc.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\5c4428b7-9a7b-4871-ad5c-536c4bbc82dc.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\6250a4bf-00f2-453f-a369-cb11f169dd8f.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\6250a4bf-00f2-453f-a369-cb11f169dd8f.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\62b09848-2aa5-4c83-9e92-ee7dc39cc869.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\62b09848-2aa5-4c83-9e92-ee7dc39cc869.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\872335ae-55e8-4c63-ac70-16b99916dd74.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\872335ae-55e8-4c63-ac70-16b99916dd74.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\8dc8d35b-250e-4ec8-a8dd-5f94dd00e2ae.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\8dc8d35b-250e-4ec8-a8dd-5f94dd00e2ae.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\98005c7a-82a8-44a7-91dc-583a722dc18c.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\98005c7a-82a8-44a7-91dc-583a722dc18c.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\a0526e95-39b4-4d81-8d73-2b9623971ca9.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\a0526e95-39b4-4d81-8d73-2b9623971ca9.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\bc36b1b8-132e-4aff-9ebd-72eaa77f1af5.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\bc36b1b8-132e-4aff-9ebd-72eaa77f1af5.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\files\\item\\e1995899-eb83-4dcf-a5ce-9462c8f63494.xlsx",
+      "PackagePath": "staticwebassets\\files\\item\\e1995899-eb83-4dcf-a5ce-9462c8f63494.xlsx"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\01c1823f-ce21-4199-b6c2-a16088d4211f.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\01c1823f-ce21-4199-b6c2-a16088d4211f.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\11fc66e9-2dc1-456b-b2c7-07158cc230d0.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\11fc66e9-2dc1-456b-b2c7-07158cc230d0.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\1defe7e8-8c9e-4644-97b6-7db9dfa33812.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\1defe7e8-8c9e-4644-97b6-7db9dfa33812.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\2c71979e-d493-42c1-8d36-fa8d276d2413.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\2c71979e-d493-42c1-8d36-fa8d276d2413.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\2f6dd41c-9551-4fda-94c6-df1700aaaa41.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\2f6dd41c-9551-4fda-94c6-df1700aaaa41.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\330b0ae9-fd80-4e3e-b80b-90832a8b2baf.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\330b0ae9-fd80-4e3e-b80b-90832a8b2baf.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\4a4ffdc1-d029-4fac-bfc8-5a814d5773e4.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\4a4ffdc1-d029-4fac-bfc8-5a814d5773e4.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\4eb286cf-ac04-41a2-8200-96131f22f33f.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\4eb286cf-ac04-41a2-8200-96131f22f33f.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\5cf0c16c-0b79-4bac-8692-de5d99cbac99.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\5cf0c16c-0b79-4bac-8692-de5d99cbac99.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\6093cb68-74e5-4547-a3bc-a05246543845.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\6093cb68-74e5-4547-a3bc-a05246543845.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\60df48d2-6456-4b89-970c-61dcbf2e08e3.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\60df48d2-6456-4b89-970c-61dcbf2e08e3.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\6e303a45-e823-4cd6-8d27-2b42642eb5f2.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\6e303a45-e823-4cd6-8d27-2b42642eb5f2.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\707465be-5659-4a58-b051-cb4eabf78050.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\707465be-5659-4a58-b051-cb4eabf78050.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\7d3340ba-3466-43af-b074-f8d5d9babde5.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\7d3340ba-3466-43af-b074-f8d5d9babde5.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\81789235-41c3-45c9-95b6-9505082b86a9.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\81789235-41c3-45c9-95b6-9505082b86a9.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\8e496607-d2d5-44f2-840f-7a0b1e3d702d.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\8e496607-d2d5-44f2-840f-7a0b1e3d702d.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\8eefe097-dca6-4a94-a835-d15911ed1f87.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\8eefe097-dca6-4a94-a835-d15911ed1f87.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\a0c111e5-90ec-4db1-9737-0b197b0bc5e7.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\a0c111e5-90ec-4db1-9737-0b197b0bc5e7.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\a2258368-6f6d-45ea-aeae-67c1100c538d.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\a2258368-6f6d-45ea-aeae-67c1100c538d.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\abe25bab-b152-4780-a2ae-45bd891bc755.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\abe25bab-b152-4780-a2ae-45bd891bc755.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\acd33d05-627f-4e65-a1f1-8ea70de4a48c.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\acd33d05-627f-4e65-a1f1-8ea70de4a48c.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\b5935beb-8f9e-4e1a-b0e6-7402e50f6721.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\b5935beb-8f9e-4e1a-b0e6-7402e50f6721.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\ca8bc1b4-61be-4098-bc09-8e8e7b1c2fd9.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\ca8bc1b4-61be-4098-bc09-8e8e7b1c2fd9.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\d742888c-72bc-4918-a212-ef4b58fa58a5.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\d742888c-72bc-4918-a212-ef4b58fa58a5.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\e6363cf6-25b5-4ff0-9a81-665b00347960.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\e6363cf6-25b5-4ff0-9a81-665b00347960.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\item\\f4fa0ee9-02ef-4f65-95bf-ee9e271c4d3d.jpg",
+      "PackagePath": "staticwebassets\\images\\item\\f4fa0ee9-02ef-4f65-95bf-ee9e271c4d3d.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\no_data_found.jpg",
+      "PackagePath": "staticwebassets\\images\\no_data_found.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\images\\not_found.jpg",
+      "PackagePath": "staticwebassets\\images\\not_found.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\category.js",
+      "PackagePath": "staticwebassets\\js\\category.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\file-upload.js",
+      "PackagePath": "staticwebassets\\js\\file-upload.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\item-details.js",
+      "PackagePath": "staticwebassets\\js\\item-details.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\item.js",
+      "PackagePath": "staticwebassets\\js\\item.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\lightslider.js",
+      "PackagePath": "staticwebassets\\js\\lightslider.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\lib\\popper\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper\\popper.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Summit Interview.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Summit Interview.props",
+      "PackagePath": "build\\Summit Interview.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Summit Interview.props",
+      "PackagePath": "buildMultiTargeting\\Summit Interview.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Summit Interview.props",
+      "PackagePath": "buildTransitive\\Summit Interview.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
