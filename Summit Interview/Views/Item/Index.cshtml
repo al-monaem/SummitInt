@@ -1,9 +1,9 @@
 ﻿<div class="py-4 px-4 flex-grow-1">
     <div class="d-flex justify-content-between align-content-center mb-4">
         <h2>Items</h2>
-        <div class="d-flex align-items-center justify-content-center gap-3">
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true" data-bs-auto-close="outside">
+        <div class="d-flex align-items-center justify-content-center gap-1">
+            <div class="dropdown" id="filterDrowdown">
+                <button style="position: relative;" type="button" class="btn btn-primary dropdown-toggle" data-bs-target="filterDrowdown" data-bs-toggle="dropdown" aria-expanded="true" data-bs-auto-close="outside">
                     Filter
                 </button>
                 <form id="filterForm" class="dropdown-menu p-3" style="width: 300px">
@@ -33,7 +33,6 @@
 
 @section Scripts {
     <script src="~/js/item.js"></script>
-    <script src="~/js/file-upload.js"></script>
     <script>
         tinymce.init({
             selector: 'textarea',

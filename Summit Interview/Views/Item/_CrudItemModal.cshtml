@@ -21,14 +21,7 @@
                         </div>
                         <div class="col-md">
                             <div class="form-floating">
-                                <select id="item_unit" class="form-control" asp-for="ItemUnit">
-                                    @{
-                                        foreach(var option in ViewBag.UnitTypes)
-                                        {
-                                            <option value="@option">@option</option>
-                                        }
-                                    }
-                                </select>
+                                <input id="item_unit" class="form-control" asp-for="ItemUnit" asp placeholder="Enter item unit" />
                                 <label asp-for="ItemUnit" class="mb-2"></label>
                                 <span id="item_unit_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
                             </div>

@@ -17,3 +17,4 @@ G:\Projects\Summit Interview\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 G:\Projects\Summit Interview\DAL\obj\Debug\net8.0\ref\DAL.dll
 G:\Projects\Summit Interview\DAL\bin\Debug\net8.0\Utility.dll
 G:\Projects\Summit Interview\DAL\bin\Debug\net8.0\Utility.pdb
+G:\Projects\Summit Interview\DAL\obj\Debug\net8.0\DAL.sourcelink.json

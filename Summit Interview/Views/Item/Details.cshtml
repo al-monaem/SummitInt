@@ -1,47 +1,80 @@
-﻿@using Models.Model
-@model Item;
+﻿@using Models.Model;
+@using Models.ResponseEntity;
+@model ItemDetails;
 
 <head>
     <link rel="stylesheet" href="~/css/item-details.css" />
 </head>
 
-<div class="d-flex flex-column flex-grow-1 p-5">
-    <div class="d-flex">
+<div class="p-5 w-100">
+    <div class="d-flex" style="width: 100%;">
         <div class="col-md d-flex align-items-center justify-content-center">
             <div id="item-carousel">
-                <ul id="lightSlider" style="260px">
-                    @if (Model.ItemImages.Count > 0)
+                <ul id="lightSlider" style="width: 260px">
+                    @if (Model.Item.ItemImages.Count > 0)
                     {
-                        foreach (var image in Model.ItemImages)
+                        foreach (var image in Model.Item.ItemImages)
                         {
                             <li class="img-thumbnail" data-thumb="/@image.ImageURL">
-                                <img src="/@image.ImageURL" />
+                                <img style="height: 250px; width: 100%; object-fit: fill" src="/@image.ImageURL" />
                             </li>
                         }
                     }
                     else
                     {
-                        <li><img data-thumb="/images/not_found.jpg" src="/images/not_found.jpg" alt="Card image cap"></li>
+                        <li><img style="height: 250px; width: 100%; object-fit: fill" data-thumb="/images/not_found.jpg" src="/images/not_found.jpg" alt="Card image cap"></li>
                     }
                 </ul>
             </div>
         </div>
         <div class="col-md">
-            <h4>@Model.ItemName</h4>
-            <div style="max-height: 200px; overflow-y: auto;">
-                @Html.Raw(@Model.ItemDescription)
+            <h4>@Model.Item.ItemName</h4>
+            <div style="max-height: 200px; overflow-y: auto;" class="mb-3">
+                @Html.Raw(@Model.Item.ItemDescription)
             </div>
-            <h6>Category: <span class="badge badge-info">@Model.Category?.Name</span></h6>
-            <h6>Unit: <span class="badge badge-info">@Model.ItemUnit</span></h6>
-            <h6>Quantity: @Model.ItemQuantity</h6>
+            <h6>Category: <span class="badge badge-info">@Model.Item.Category?.Name</span></h6>
+            <h6>Unit: <span class="badge badge-info">@Model.Item.ItemUnit</span></h6>
+            <h6>Quantity: @Model.Item.ItemQuantity</h6>
             <div class="mt-4">
                 <button type="button" class="btn btn-primary">Add to cart</button>
-                <button onclick="handleEditModal('@Model.Category.Name', @Model.CategoryId)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#itemEditModal">Edit Item</button>
-                <button type="button" onclick="handleDeleteItem(@Model.Id)" class="btn btn-danger">Delete Item</button>
+                <button onclick="handleEditModal('@Model.Item.Category.Name', @Model.Item.CategoryId)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#itemEditModal">Edit Item</button>
+                <button type="button" onclick="handleDeleteItem(@Model.Item.Id)" class="btn btn-danger">Delete Item</button>
             </div>
         </div>
     </div>
-    <div></div>
+    @if(Model.SimilarItems != null && Model.SimilarItems.Count > 0)
+    {
+        <div id="similar-items" style="margin-top: 100px;">
+            <h5 style="padding: 10px;">Similar Items</h5>
+            <div class="d-flex align-items-center">
+                <div onclick="slide('l')" class="slide-btn me-3"><i class="bi bi-chevron-left"></i></div>
+                <ul id="similarLightSlider">
+                    @foreach (var item in Model.SimilarItems)
+                    {
+                        <li>
+                            <a class="card" asp-action="Details" asp-route-id="@item.Id" style="text-decoration: none;">
+                                @{
+                                    if (item.ItemImages.Count > 0)
+                                    {
+                                            <img class="img-thumbnail" style="height: 100px;" src="/@item.ItemImages[0]?.ImageURL" />
+                                    }
+                                    else
+                                    {
+                                            <img class="img-thumbnail" style="height: 100px;" src="/images/not_found.jpg" />
+                                    }
+                                }
+                                <div style="padding: 4px !important;">
+                                    <h5 style="font-size: 14px !important;">@item.ItemName</h5>
+                                    <div style="font-size: 12px !important;">@Html.Raw(item.ItemDescription.Substring(0, 100))</div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                </ul>
+                <div onclick="slide('r')" class="slide-btn ms-3"><i class="bi bi-chevron-right"></i></div>
+            </div>
+        </div>
+    }
 
     <partial name="_EditItemModal" />
 </div>
@@ -66,9 +99,20 @@
                 text: categoryName,
             });
             make_select.setValue(categoryId);
-            var itemImages = @Json.Serialize(Model.ItemImages.Select(item => item.ImageURL).ToList());
+            var itemImages = @Json.Serialize(Model.Item.ItemImages.Select(item => item.ImageURL).ToList());
             existingImages = itemImages;
             previewImage(existingImages);
         }
+
+        const sliderProps = {
+            gallery: false,
+            loop: false,
+            pager: false,
+            item: 4,
+        }
+
+        
+
+        slider = $('#similarLightSlider').lightSlider(sliderProps);
     </script>
 }

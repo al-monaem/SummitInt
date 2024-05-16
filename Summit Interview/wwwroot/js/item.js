@@ -51,6 +51,45 @@ $(document).ready(() => {
 	}, false);
 })
 
+
+$("#fileUploadForm").on("submit", (e) => {
+	e.preventDefault();
+
+	if (file === null) {
+		toastr.error("File cannot be empty", "Error");
+		return;
+	}
+
+	const payload = new FormData();
+	payload.append("file", file);
+
+	$.ajax({
+		url: "/Item/BulkUpload",
+		type: "POST",
+		data: payload,
+		processData: false,
+		contentType: false,
+		success: (result) => {
+			if (result.status === 201) {
+				toastr.success(result.message, "Success");
+				file = null;
+				document.getElementById("file_input").value = null;
+				$("#previewFile").html("");
+				$("#bulkUploadModal").modal("toggle");
+				loadItems();
+			} else if (result.status >= 500) {
+				toastr.error(result.message, "Error");
+			} else {
+				toastr.warning(result.message, "Error");
+			}
+		},
+		error: (error) => {
+			console.log(error);
+		}
+	})
+})
+
+
 $("#customFileUploadBtn").on("click", (e) => {
 	e.stopPropagation();
 	$("#item_images").click();
@@ -167,8 +206,14 @@ function loadItems() {
 
 $("#filterForm").on("submit", (e) => {
 	e.preventDefault();
-	pagination.filterByItemCategory = $("#itemCategory").val();
-	pagination.filterByItemName = $("#itemName").val();
+	const itemCat = $("#itemCategory").val();
+	const itemName = $("#itemName").val();
+
+	if (pagination.filterByItemCategory === itemCat && pagination.filterByItemName === itemName) return;
+	pagination.page = 1;
+
+	pagination.filterByItemCategory = itemCat;
+	pagination.filterByItemName = itemName;
 
 	loadItems();
 })

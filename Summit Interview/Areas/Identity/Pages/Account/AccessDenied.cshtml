@@ -1,0 +1,18 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+    Layout = "_AuthLayout";
+}
+
+<header class="d-flex flex-column w-100 h-100 justify-content-center align-items-center">
+    <h1 class="text-danger">@ViewData["Title"]</h1>
+    <p class="text-danger">You do not have access to this resource.</p>
+    <div style="margin-bottom: 20vh;" class="d-flex gap-2">
+        <a href="/" class="btn btn-primary">Home</a>
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/Identity/Account/Login">
+            <button id="logout" type="submit" class="btn btn-info">Logout</button>
+        </form>
+    </div>
+</header>
+

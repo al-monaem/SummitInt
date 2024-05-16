@@ -120,3 +120,57 @@ div::-webkit-scrollbar-thumb:hover {
         overflow-x: hidden;
     }
 }
+
+#notification-btn {
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+}
+#notification-btn:hover {
+    color: var(--bs-danger);
+    transition: 0.3s;
+}
+#notification-btn.show {
+    color: var(--bs-danger);
+}
+
+.notification {
+    position: relative;
+}
+.notification-badge {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: red;
+    right: 0;
+    top: -4px;
+    padding: 0px 4px;
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.lslide {
+    margin-right: 10px !important;
+}
+
+.slide-btn {
+    border-radius: 100px;
+    border: 1px solid;
+    padding: 4px 8px;
+    border-color: var(--bs-primary);
+}
+
+.slide-btn:hover {
+    border-color: white;
+    background-color: var(--bs-primary);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.input-group-prepend * {
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 6px 0px 0px 6px;
+}

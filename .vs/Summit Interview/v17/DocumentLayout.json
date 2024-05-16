@@ -3,52 +3,80 @@
   "WorkspaceRootPath": "G:\\Projects\\Summit Interview\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\item\\_itemlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\item\\_itemlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\item\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\item\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\wwwroot\\js\\file-upload.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\wwwroot\\js\\file-upload.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\wwwroot\\js\\item-details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\wwwroot\\js\\item-details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\wwwroot\\js\\item.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\wwwroot\\js\\item.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54DF98BB-F496-4FEB-BFCC-5BC0FFBEE7C4}|DAL\\DAL.csproj|g:\\projects\\summit interview\\dal\\repositories\\itemrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DF98BB-F496-4FEB-BFCC-5BC0FFBEE7C4}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\itemrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0840D58B-F85C-4D0F-9E09-522F87AEB09F}|BLL\\BLL.csproj|g:\\projects\\summit interview\\bll\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0840D58B-F85C-4D0F-9E09-522F87AEB09F}|BLL\\BLL.csproj|solutionrelative:bll\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\wwwroot\\css\\item-details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\wwwroot\\css\\item-details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54DF98BB-F496-4FEB-BFCC-5BC0FFBEE7C4}|DAL\\DAL.csproj|g:\\projects\\summit interview\\dal\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54DF98BB-F496-4FEB-BFCC-5BC0FFBEE7C4}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\item\\_bulkuploadmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\item\\_bulkuploadmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54DF98BB-F496-4FEB-BFCC-5BC0FFBEE7C4}|DAL\\DAL.csproj|g:\\projects\\summit interview\\dal\\migrations\\20240513050417_item_stored_procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54DF98BB-F496-4FEB-BFCC-5BC0FFBEE7C4}|DAL\\DAL.csproj|solutionrelative:dal\\migrations\\20240513050417_item_stored_procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\shared\\_loginreg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\shared\\_loginreg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\wwwroot\\js\\category.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\wwwroot\\js\\category.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\item\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\item\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\item\\_edititemmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\item\\_edititemmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\views\\item\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\views\\item\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|g:\\projects\\summit interview\\summit interview\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B40D88-ED76-4FEF-A55F-E47B25F8E793}|Summit Interview\\Summit Interview.csproj|solutionrelative:summit interview\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{850ECBF3-D1BB-494F-9F4C-6722C10D1510}|Models\\Models.csproj|g:\\projects\\summit interview\\models\\requestentity\\categorypagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850ECBF3-D1BB-494F-9F4C-6722C10D1510}|Models\\Models.csproj|solutionrelative:models\\requestentity\\categorypagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,118 +94,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Program.cs",
-              "RelativeDocumentMoniker": "Summit Interview\\Program.cs",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Program.cs",
-              "RelativeToolTip": "Summit Interview\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAewBQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T10:07:44.563Z",
+              "DocumentIndex": 4,
+              "Title": "item-details.css",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\item-details.css",
+              "RelativeDocumentMoniker": "Summit Interview\\wwwroot\\css\\item-details.css",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\item-details.css",
+              "RelativeToolTip": "Summit Interview\\wwwroot\\css\\item-details.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-16T16:36:20.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "20240513050417_ITEM_STORED_PROCEDURE.cs",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\DAL\\Migrations\\20240513050417_ITEM_STORED_PROCEDURE.cs",
-              "RelativeDocumentMoniker": "DAL\\Migrations\\20240513050417_ITEM_STORED_PROCEDURE.cs",
-              "ToolTip": "G:\\Projects\\Summit Interview\\DAL\\Migrations\\20240513050417_ITEM_STORED_PROCEDURE.cs",
-              "RelativeToolTip": "DAL\\Migrations\\20240513050417_ITEM_STORED_PROCEDURE.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAxwA8AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T05:04:17.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemRepo.cs",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\DAL\\Repositories\\ItemRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\ItemRepo.cs",
-              "ToolTip": "G:\\Projects\\Summit Interview\\DAL\\Repositories\\ItemRepo.cs",
-              "RelativeToolTip": "DAL\\Repositories\\ItemRepo.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T17:18:12.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ItemManager.cs",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\BLL\\Manager\\ItemManager.cs",
-              "RelativeDocumentMoniker": "BLL\\Manager\\ItemManager.cs",
-              "ToolTip": "G:\\Projects\\Summit Interview\\BLL\\Manager\\ItemManager.cs",
-              "RelativeToolTip": "BLL\\Manager\\ItemManager.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAewEwAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T11:24:45.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "Summit Interview\\Controllers\\ItemController.cs",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "Summit Interview\\Controllers\\ItemController.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAlwKsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T11:20:15.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "file-upload.js",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\file-upload.js",
-              "RelativeDocumentMoniker": "Summit Interview\\wwwroot\\js\\file-upload.js",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\file-upload.js",
-              "RelativeToolTip": "Summit Interview\\wwwroot\\js\\file-upload.js",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwEEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-12T09:55:06.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\Index.cshtml",
-              "RelativeDocumentMoniker": "Summit Interview\\Views\\Item\\Index.cshtml",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\Index.cshtml",
-              "RelativeToolTip": "Summit Interview\\Views\\Item\\Index.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAhwCMAAAATAAAA",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Summit Interview\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T09:41:04.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_EditItemModal.cshtml",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\_EditItemModal.cshtml",
-              "RelativeDocumentMoniker": "Summit Interview\\Views\\Item\\_EditItemModal.cshtml",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\_EditItemModal.cshtml",
-              "RelativeToolTip": "Summit Interview\\Views\\Item\\_EditItemModal.cshtml",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAiwFAAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T09:38:15.921Z"
+              "WhenOpened": "2024-05-16T15:48:29.786Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "_BulkUploadModal.cshtml",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\_BulkUploadModal.cshtml",
-              "RelativeDocumentMoniker": "Summit Interview\\Views\\Item\\_BulkUploadModal.cshtml",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\_BulkUploadModal.cshtml",
-              "RelativeToolTip": "Summit Interview\\Views\\Item\\_BulkUploadModal.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Summit Interview\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T09:38:00.394Z",
+              "WhenOpened": "2024-05-16T15:34:07.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Summit Interview\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T15:33:43.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_LoginReg.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_LoginReg.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Views\\Shared\\_LoginReg.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_LoginReg.cshtml",
+              "RelativeToolTip": "Summit Interview\\Views\\Shared\\_LoginReg.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T15:33:17.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Summit Interview\\Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T15:32:38.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Summit Interview\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T15:32:28.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryRepo.cs",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\DAL\\Repositories\\CategoryRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\CategoryRepo.cs",
+              "ToolTip": "G:\\Projects\\Summit Interview\\DAL\\Repositories\\CategoryRepo.cs",
+              "RelativeToolTip": "DAL\\Repositories\\CategoryRepo.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAswIQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:04:29.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CategoryPagination.cs",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Models\\RequestEntity\\CategoryPagination.cs",
+              "RelativeDocumentMoniker": "Models\\RequestEntity\\CategoryPagination.cs",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Models\\RequestEntity\\CategoryPagination.cs",
+              "RelativeToolTip": "Models\\RequestEntity\\CategoryPagination.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:04:18.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Summit Interview\\wwwroot\\css\\site.css",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Summit Interview\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAAHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-16T14:06:53.975Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Summit Interview\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T13:51:46.293Z"
             },
             {
               "$type": "Document",
@@ -187,35 +234,96 @@
               "RelativeDocumentMoniker": "Summit Interview\\wwwroot\\js\\item.js",
               "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\item.js",
               "RelativeToolTip": "Summit Interview\\wwwroot\\js\\item.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJYAAAAAAAAA",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAuwNEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-12T07:21:24.969Z",
+              "WhenOpened": "2024-05-16T13:50:39.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "item-details.js",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\item-details.js",
+              "RelativeDocumentMoniker": "Summit Interview\\wwwroot\\js\\item-details.js",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\item-details.js",
+              "RelativeToolTip": "Summit Interview\\wwwroot\\js\\item-details.js",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-16T13:50:02.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Details.cshtml",
               "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\Details.cshtml",
               "RelativeDocumentMoniker": "Summit Interview\\Views\\Item\\Details.cshtml",
               "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\Details.cshtml",
               "RelativeToolTip": "Summit Interview\\Views\\Item\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAASAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADAAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T06:25:50.377Z"
+              "WhenOpened": "2024-05-16T04:22:12.326Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_ItemList.cshtml",
-              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\_ItemList.cshtml",
-              "RelativeDocumentMoniker": "Summit Interview\\Views\\Item\\_ItemList.cshtml",
-              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\_ItemList.cshtml",
-              "RelativeToolTip": "Summit Interview\\Views\\Item\\_ItemList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA7AAAA",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\Index.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Views\\Item\\Index.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Item\\Index.cshtml",
+              "RelativeToolTip": "Summit Interview\\Views\\Item\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T05:40:44.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T03:42:15.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "Summit Interview\\Controllers\\ItemController.cs",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "Summit Interview\\Controllers\\ItemController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwD0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:38:31.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Summit Interview\\Controllers\\CategoryController.cs",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Summit Interview\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwCQAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:38:08.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "category.js",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\category.js",
+              "RelativeDocumentMoniker": "Summit Interview\\wwwroot\\js\\category.js",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\wwwroot\\js\\category.js",
+              "RelativeToolTip": "Summit Interview\\wwwroot\\js\\category.js",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAAAPoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-16T03:29:22.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Summit Interview\\Views\\Category\\Index.cshtml",
+              "ToolTip": "G:\\Projects\\Summit Interview\\Summit Interview\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Summit Interview\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T03:20:26.397Z"
             }
           ]
         }

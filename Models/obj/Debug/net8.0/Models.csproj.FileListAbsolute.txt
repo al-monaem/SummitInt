@@ -13,3 +13,4 @@ G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.csproj.AssemblyRefer
 G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Utility.dll
 G:\Projects\Summit Interview\Models\bin\Debug\net8.0\Utility.pdb
 G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.csproj.Up2Date
+G:\Projects\Summit Interview\Models\obj\Debug\net8.0\Models.sourcelink.json

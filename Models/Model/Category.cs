@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -18,15 +19,19 @@ namespace Models.Model
         public int Id { get; set; }
 
         [Required, NotNull]
-        [StringLength(20)]
+        [StringLength(50)]
         [DisplayName("Category Name")]
         public required string Name { get; set; }
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        //public int CreatedBy { get; set; }
-        //public int UpdatedBy { get; set; }
+        public string? CreatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
 
-        public virtual List<Item> Items { get; set; }
+        public virtual List<Item>? Items { get; set; }
+        [ForeignKey(nameof(CreatedBy))]
+        public virtual User? CreatedByUser { get; set; }
+        [ForeignKey(nameof(UpdatedBy))]
+        public virtual User? UpdatedByUser { get; set; }
     }
 }

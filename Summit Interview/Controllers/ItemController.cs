@@ -1,43 +1,58 @@
 ﻿using BLL.Manager;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Models.Model;
 using Models.RequestEntity;
 using Models.ResponseEntity;
+using Utility;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Summit_Interview.Controllers
 {
+    [Authorize(Roles = $"{AppRoles.GENERAL}, {AppRoles.ADMIN}")]
     public class ItemController: Controller
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ItemManager _manager;
-        public ItemController(IWebHostEnvironment webHostEnvironment, ItemManager manager)
+        private readonly UserManager<IdentityUser> _userManager;
+
+        public ItemController(IWebHostEnvironment webHostEnvironment, ItemManager manager, UserManager<IdentityUser> userManager)
         {
             _webHostEnvironment = webHostEnvironment;
             _manager = manager;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
         {
-            var UnitTypes = Utility.Utility.UnitTypes;
-            ViewBag.UnitTypes = UnitTypes;
-
+            ViewData["Current"] = "Items";
             return View();
         }
 
         public async Task<IActionResult> Details(int id)
         {
             var item = await _manager.GetItem(id);
-            var UnitTypes = Utility.Utility.UnitTypes;
-            ViewBag.UnitTypes = UnitTypes;
-
+            ViewData["Current"] = "Items";
             if (item == null)
             {
                 return NotFound();
             }
-            return View(item);
+
+            var (similarItems, _, _, _) = await _manager.GetItems(new ItemPagination()
+            {
+                ItemCategory = item.Category.Name,
+                Limit = 10,
+                Page = 1,
+            });
+
+            return View(new ItemDetails()
+            {
+                Item = item,
+                SimilarItems = similarItems,
+            });
         }
 
         public async Task<IActionResult> Items([FromQuery]ItemPagination pagination)
@@ -52,7 +67,7 @@ namespace Summit_Interview.Controllers
                     Model = new DataResponse<Item>()
                     {
                         List = items,
-                        Pagination = pagination,
+                        Pagination = _pagination,
                     }
                 }
             };
@@ -87,7 +102,8 @@ namespace Summit_Interview.Controllers
                 {
                     foreach(var file in files)
                     {
-                        string filename = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                        var filenameWithoutExt = Path.GetFileNameWithoutExtension(file.FileName);
+                        string filename = filenameWithoutExt.Length > 20 ? filenameWithoutExt.Substring(0, 20) : filenameWithoutExt + "__" + Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                         string itemPath = Path.Combine(wwwrootpath, @"images\item", filename);
                         using(var fileStream = new FileStream(itemPath, FileMode.Create))
                         {
@@ -144,7 +160,8 @@ namespace Summit_Interview.Controllers
             }
 
             var wwwrootpath = _webHostEnvironment.WebRootPath;
-            string filename = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+            var filenameWithoutExt = Path.GetFileNameWithoutExtension(file.FileName);
+            string filename = filenameWithoutExt.Length > 20 ? filenameWithoutExt.Substring(0, 20) : filenameWithoutExt + "__" + Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
 
             System.IO.Directory.CreateDirectory(Path.Combine(wwwrootpath, @"files\item"));
 
@@ -154,7 +171,8 @@ namespace Summit_Interview.Controllers
                 file.CopyTo(fileStream);
             }
 
-            var (status, message) = await _manager.BulkUpload(itemPath);
+            string userId = _userManager.GetUserId(User);
+            var (status, message) = await _manager.BulkUpload(itemPath, filename, userId);
 
             if(status != 201)
             {

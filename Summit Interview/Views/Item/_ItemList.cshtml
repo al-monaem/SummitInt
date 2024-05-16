@@ -57,17 +57,17 @@
         const currentPage = pagination.page;
 
         // Previous Button
-        html += `<button class="btn btn-info ${currentPage === 1 || !pagination.totalPage ? "disabled" : ""}" onclick="paginate(' + (currentPage > 1 ? currentPage - 1 : 1) + ')">Previous</button>`;
+        html += `<button class="btn btn-info ${currentPage === 1 || !pagination.totalPage ? "disabled" : ""}" onclick="paginate(${currentPage > 1 ? currentPage - 1 : 1})">Previous</button>`;
 
         const startPage = Math.max(1, currentPage - 2);
         const endPage = Math.min(totalPages, startPage + 4);
 
         for (let i = startPage; i <= endPage; i++) {
-            html += '<button' + (i === currentPage || !pagination.totalPage ? ' class="disabled btn btn-primary"' : ' class="btn btn-info"') + ' onclick="paginate(' + i + ')">' + i + '</button>';
+            html += '<button' + (i === currentPage || !pagination.totalPage ? ' class="disabled btn btn-primary"' : ' class="btn btn-info"') + ` onclick="paginate(${i})">` + i + '</button>';
         }
 
         // Next Button
-        html += `<button class="btn btn-info ${currentPage === totalPages || !pagination.totalPage ? "disabled" : ""}" onclick="paginate(' + (currentPage < totalPages ? currentPage + 1 : totalPages) + ')">Next</button>`;
+        html += `<button class="btn btn-info ${currentPage === totalPages || !pagination.totalPage ? "disabled" : ""}" onclick="paginate(${currentPage < totalPages ? currentPage + 1 : totalPages})">Next</button>`;
 
         html += '</div>';
         

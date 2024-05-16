@@ -20,13 +20,13 @@ namespace DAL.Repositories
     public class ItemRepo
     {
         private readonly SummitDbContext _db;
-        private readonly IServiceProvider _serviceProvider;
+        private readonly IServiceScopeFactory _serviceScopeFactory;
         private readonly ILogger<ItemRepo> _logger;
 
-        public ItemRepo(SummitDbContext db, IServiceProvider serviceProvider, ILogger<ItemRepo> logger)
+        public ItemRepo(SummitDbContext db, IServiceScopeFactory serviceScopeFactory, ILogger<ItemRepo> logger)
         {
             _db = db;
-            _serviceProvider = serviceProvider;
+            _serviceScopeFactory = serviceScopeFactory;
             this._logger = logger;
         }
 
@@ -37,9 +37,6 @@ namespace DAL.Repositories
 
             var query = _db.Items.Include(i => i.Category).Include(i => i.ItemImages).AsQueryable();
 
-            pagination.TotalItem = query.Count();
-            pagination.TotalPage = (int)Math.Ceiling((decimal)pagination.TotalItem / (decimal)limit);
-
             if(!String.IsNullOrEmpty(pagination.ItemName))
             {
                 query = query.Where(i => EF.Functions.Like(i.ItemName, $"%{pagination.ItemName}%"));
@@ -48,6 +45,9 @@ namespace DAL.Repositories
             {
                 query = query.Where(i => EF.Functions.Like(i.Category.Name, $"%{pagination.ItemCategory}%"));
             }
+
+            pagination.TotalItem = query.Count();
+            pagination.TotalPage = (int)Math.Ceiling((decimal)pagination.TotalItem / (decimal)limit);
 
             return (await query.Skip((page - 1) * limit).Take(limit).ToListAsync(), pagination);
         }
@@ -92,27 +92,51 @@ namespace DAL.Repositories
             return (await _db.SaveChangesAsync(), imageFiles);
         }
 
-        public async Task<int> BulkUpload(List<Item> items)
+        public async Task<int> BulkUpload(List<Item> items, string filename, string userid)
         {
             var dataTable = CreateDataTable(items);
 
             var parameter = new SqlParameter("@Item", SqlDbType.Structured);
             parameter.Value = dataTable;
-            parameter.TypeName = "[dbo].[ItemType]"; // My Table valued user defined type
+            parameter.TypeName = "[dbo].[ItemType]";
+
+            var fileUpload = new FileUploadTracker()
+            {
+                Filename = filename,
+                UploadedBy = userid,
+                FileType = (byte)UploadFileType.Item,
+                ReadStatus = (byte)ReadStatus.UnRead,
+                UploadStatus = (byte)UploadStatus.Uploading
+            };
+
+            await _db.FileUploads.AddAsync(fileUpload);
+            await _db.SaveChangesAsync();
 
             _ = Task.Run(async () =>
             {
-                try
+                await using (var scope = _serviceScopeFactory.CreateAsyncScope())
                 {
-                    await using(var scope = _serviceProvider.CreateAsyncScope())
+                    var db = scope.ServiceProvider.GetRequiredService<SummitDbContext>();
+                    try
                     {
-                        var db = scope.ServiceProvider.GetRequiredService<SummitDbContext>();
                         await db.Database.ExecuteSqlRawAsync($"EXEC [dbo].[InsertMultipleItems] @Item", parameter);
+                        fileUpload.UploadStatus = (byte)UploadStatus.Completed;
                     }
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex.Message);
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex.Message);
+                        fileUpload.UploadStatus = (byte)UploadStatus.Failed;
+                        fileUpload.Error = ex.Message;
+                    }
+                    finally
+                    {
+                        db.FileUploads.Update(fileUpload);
+                        await db.SaveChangesAsync();
+                        Debug.WriteLine("======================================");
+                        Debug.WriteLine(fileUpload.Filename);
+                        Debug.WriteLine(fileUpload.UploadStatus);
+                        Debug.WriteLine("======================================");
+                    }
                 }
             });
 
@@ -127,12 +151,13 @@ namespace DAL.Repositories
             table.Columns.Add("ItemUnit", typeof(string));
             table.Columns.Add("ItemQuantity", typeof(string));
             table.Columns.Add("CategoryId", typeof(int));
+            table.Columns.Add("ItemDescription", typeof(string));
             table.Columns.Add("CreatedAt", typeof(DateTime));
             table.Columns.Add("UpdatedAt", typeof(DateTime));
 
             foreach (var item in items)
             {
-                table.Rows.Add(item.Id, item.ItemName, item.ItemUnit, item.ItemQuantity, item.CategoryId, DateTime.Now, DateTime.Now);
+                table.Rows.Add(item.Id, item.ItemName, item.ItemUnit, item.ItemQuantity, item.CategoryId, item.ItemDescription, DateTime.Now, DateTime.Now);
             }
             return table;
         }

@@ -3,6 +3,8 @@ using DAL.Data;
 using DAL.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Models.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
@@ -15,11 +17,25 @@ builder.Services.AddDbContext<SummitDbContext>
                     maxRetryDelay: System.TimeSpan.FromSeconds(30),
                     errorNumbersToAdd: null)));
 
+//builder.Services.AddTransient<UserManager<User>>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>((options) =>
+    {
+        options.User.RequireUniqueEmail = true;
+        options.SignIn.RequireConfirmedEmail = false;
+        options.SignIn.RequireConfirmedAccount = false;
+    })
+    .AddEntityFrameworkStores<SummitDbContext>()
+    .AddDefaultUI()
+    .AddDefaultTokenProviders();
+
 builder.Services.AddScoped<CategoryManager>();
 builder.Services.AddScoped<CategoryRepo>();
 builder.Services.AddScoped<ItemManager>();
 builder.Services.AddScoped<ItemRepo>();
+builder.Services.AddScoped<NotificationManager>();
+builder.Services.AddScoped<NotificationRepo>();
 
+builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
@@ -37,8 +53,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Item}/{action=Index}/{id?}");

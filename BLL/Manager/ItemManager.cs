@@ -34,7 +34,7 @@ namespace BLL.Manager
             }
         }
 
-        public async Task<(int, string)> BulkUpload(string filepath)
+        public async Task<(int, string)> BulkUpload(string filepath, string filename, string userId)
         {
             try
             {
@@ -54,10 +54,11 @@ namespace BLL.Manager
                         var item = new Item()
                         {
                             Id = Convert.ToInt32(worksheet.Cells[row, 1]?.Value?.ToString() ?? "0"),
-                            ItemName = worksheet.Cells[row, 2]?.Value?.ToString() ?? null,
-                            ItemUnit = worksheet.Cells[row, 3]?.Value?.ToString() ?? null,
-                            ItemQuantity = worksheet.Cells[row, 4]?.Value?.ToString() ?? null,
+                            ItemName = worksheet.Cells[row, 2]?.Value?.ToString() ?? "",
+                            ItemUnit = worksheet.Cells[row, 3]?.Value?.ToString() ?? "",
+                            ItemQuantity = worksheet.Cells[row, 4]?.Value?.ToString() ?? "",
                             CategoryId = Convert.ToInt32(worksheet.Cells[row, 5]?.Value?.ToString() ?? "0"),
+                            ItemDescription = worksheet.Cells[row, 6]?.Value?.ToString() ?? "",
                         };
 
                         if (item.Id == 0)
@@ -76,7 +77,7 @@ namespace BLL.Manager
 
                     package.Dispose();
 
-                    var status = await _repo.BulkUpload(items);
+                    var status = await _repo.BulkUpload(items, filename, userId);
 
                     return (status, "File uploaded successfully");
                 }

@@ -17,3 +17,4 @@ G:\Projects\Summit Interview\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.c
 G:\Projects\Summit Interview\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
 G:\Projects\Summit Interview\BLL\bin\Debug\net8.0\Utility.dll
 G:\Projects\Summit Interview\BLL\bin\Debug\net8.0\Utility.pdb
+G:\Projects\Summit Interview\BLL\obj\Debug\net8.0\BLL.sourcelink.json

@@ -1,6 +1,7 @@
 ﻿var make_select;
 var existingImages = [];
 var selectedFiles = [];
+var slider;
 
 window.addEventListener("dragover", function (e) {
 	e.preventDefault();
@@ -16,7 +17,7 @@ $(document).ready(() => {
         loop: true,
         slideMargin: 0,
         thumbItem: 6
-    });
+	});
 
 	make_select = new TomSelect("#category", {
 		create: false,
@@ -47,6 +48,14 @@ $(document).ready(() => {
 		previewImage();
 	}, false);
 })
+
+function slide(dir) {
+	if (dir === "r") {
+		slider.goToNextSlide();
+	} else {
+		slider.goToPrevSlide();
+	}
+}
 
 $("#customFileUploadBtn").on("click", (e) => {
 	e.stopPropagation();
@@ -122,6 +131,8 @@ $("#itemEditForm").on("submit", (e) => {
 	const formData = new FormData(e.currentTarget);
 	const formProps = Object.fromEntries(formData);
 
+	console.log(formProps);
+
 	const payload = new FormData();
 	payload.append("categoryId", formProps.Category || "");
 	payload.append("id", formProps.Id);
@@ -129,8 +140,6 @@ $("#itemEditForm").on("submit", (e) => {
 	payload.append("itemUnit", formProps.ItemUnit || "");
 	payload.append("itemQuantity", formProps.ItemQuantity || "");
 	payload.append("itemDescription", tinymce.activeEditor.getContent() || "");
-
-	console.log(tinymce.activeEditor.getContent());
 
 	if (existingImages.length === 0) {
 		payload.append("existingImages", []);

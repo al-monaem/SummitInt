@@ -1,31 +1,47 @@
 ﻿using BLL.Manager;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Models.Model;
+using Models.RequestEntity;
 using System.Collections.Generic;
+using System.Security.Claims;
+using Utility;
 
 namespace Summit_Interview.Controllers
 {
+    [Authorize(Roles = $"{AppRoles.GENERAL}, {AppRoles.ADMIN}")]
     public class CategoryController : Controller
     {
         private readonly CategoryManager _manager;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public CategoryController(CategoryManager manager)
+        public CategoryController(CategoryManager manager, IWebHostEnvironment webHostEnvironment, UserManager<IdentityUser> user)
         {
             _manager = manager;
+            _webHostEnvironment = webHostEnvironment;
+            _userManager = user;
         }
 
         public IActionResult Index()
         {
+            ViewData["Current"] = "Category";
             return View();
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCategories([FromQuery] int page, [FromQuery]int limit)
+        public async Task<IActionResult> GetCategories(CategoryPagination categoryPagination)
         {
-            var (list, status, message) = await this._manager.GetCategories(page, limit);
+            var (list, pagination, status, message) = await this._manager.GetCategories(categoryPagination);
             return Json(new
             {
-                Data = list,
+                Data = new
+                {
+                    List = list,
+                    Pagination = pagination,
+                },
                 Status = status,
                 Message = message,
             });
@@ -43,11 +59,15 @@ namespace Summit_Interview.Controllers
             });
         }
 
+        [Authorize(Roles = AppRoles.ADMIN)]
         [HttpPost]
         public async Task<IActionResult> CreateCategory(Category category)
         {
             if(ModelState.IsValid)
             {
+                string userId = _userManager.GetUserId(User);
+                category.UpdatedBy = userId;
+                category.CreatedBy = userId;
                 var (status, message) = await this._manager.CreateCategory(category);
                 return Json(new
                 {
@@ -63,6 +83,49 @@ namespace Summit_Interview.Controllers
             });
         }
 
+        [Authorize(Roles = AppRoles.ADMIN)]
+        public async Task<IActionResult> BulkUpload(IFormFile file)
+        {
+            if (file == null)
+            {
+                return Json(new
+                {
+                    Status = 400,
+                    Message = "Invalid File"
+                });
+            }
+
+            var wwwrootpath = _webHostEnvironment.WebRootPath;
+            var filenameWithoutExt = Path.GetFileNameWithoutExtension(file.FileName);
+            string filename = filenameWithoutExt.Length > 20 ? filenameWithoutExt.Substring(0, 20) : filenameWithoutExt + "__" + Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+            System.IO.Directory.CreateDirectory(Path.Combine(wwwrootpath, @"files\category"));
+
+            string itemPath = Path.Combine(wwwrootpath, @"files\category", filename);
+            using (var fileStream = new FileStream(itemPath, FileMode.Create))
+            {
+                file.CopyTo(fileStream);
+            }
+
+            string userId = _userManager.GetUserId(User);
+            var (status, message) = await _manager.BulkUpload(itemPath, filename, userId);
+
+            if (status != 201)
+            {
+                if (System.IO.File.Exists(itemPath))
+                {
+                    System.IO.File.Delete(itemPath);
+                }
+            }
+
+            return Json(new
+            {
+                Status = status,
+                Message = message,
+            });
+        }
+
+        [Authorize(Roles = AppRoles.ADMIN)]
         [HttpDelete]
         public async Task<IActionResult> DeleteCategory(int id)
         {
@@ -74,6 +137,7 @@ namespace Summit_Interview.Controllers
             });
         }
 
+        [Authorize(Roles = AppRoles.ADMIN)]
         [HttpPut]
         public async Task<IActionResult> UpdateCategory(Category category)
         {

@@ -1,11 +1,24 @@
-﻿@{
+﻿@using Utility
+@{
     <div class="py-4 px-4 flex-grow-1">
         <div class="d-flex justify-content-between align-content-center mb-4">
             <h2>Category List</h2>
-            <div>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryCrudModal">Create Category</button>
-                <button class="btn btn-info">Bulk Upload</button>
-            </div>
+            @if(User.IsInRole(AppRoles.ADMIN))
+            {
+                <div class="d-flex align-items-center gap-2">
+                    <form class="d-flex align-items-center" id="cat-search-form">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        </div>
+                        <div>
+                            <input name="cat_name" type="text" class="form-control" placeholder="Category Name" aria-label="CategoryName">
+                        </div>
+                        
+                    </form>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryCrudModal">Create Category</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#bulkUploadModal">Bulk Upload</button>
+                </div>
+            }
         </div>
         <div class="table-responsive">
             <table id="cat_table" class="table table-borderless table-striped table-hover" style="table-layout: fixed">
@@ -15,14 +28,24 @@
                         <th scope="col">Name</th>
                         <th scope="col">Created By</th>
                         <th scope="col">Created At</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Updated By</th>
+                        <th scope="col">Updated At</th>
+                        @{
+                            if(User.IsInRole(AppRoles.ADMIN))
+                            {
+                                <th scope="col">Action</th>
+                            }
+                        }
                     </tr>
                 </thead>
                 <tbody></tbody>
             </table>
         </div>
+        <div id="paginator" class="d-flex align-items-center justify-content-center mt-2">
+        </div>
     </div>
     <partial name="_CrudCategoryModal" />
+    <partial name="_BulkUploadModal" />
 }
 
 @section Scripts {

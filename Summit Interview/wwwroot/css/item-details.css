@@ -5,7 +5,12 @@
 .lSGallery > li.active {
     border: 5px solid;
     border-color: var(--bs-info) !important;
-} 
+}
+
+.lSGallery li a img {
+    height: 50px !important;
+    object-fit: fill;
+}
 
 ul {
     list-style: none outside none;

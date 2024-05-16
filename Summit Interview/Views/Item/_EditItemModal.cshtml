@@ -1,5 +1,5 @@
-﻿@using Models.Model
-@model Item;
+﻿@using Models.ResponseEntity;
+@model ItemDetails;
 
 <div class="modal modal-lg fade" id="itemEditModal" tabindex="-1" aria-labelledby="itemEditModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" style="margin-top: 100px;">
@@ -10,27 +10,20 @@
             </div>
             <form id="itemEditForm" class="row" enctype="multipart/form-data" method="post">
                 <div class="modal-body px-4 py-2">
-                    <input id="category_id" hidden readonly asp-for="CategoryId" />
-                    <input id="id" hidden readonly asp-for="Id" />
+                    <input id="category_id" name="CategoryId" hidden readonly asp-for="Item.CategoryId" />
+                    <input id="id" name="Id" hidden readonly asp-for="Item.Id" />
                     <div class="row g-2">
                         <div class="col-md">
                             <div class="form-floating">
-                                <input id="item_name" class="form-control" asp-for="ItemName" asp placeholder="Enter item name" />
-                                <label asp-for="ItemName" class="mb-2"></label>
+                                <input id="item_name" name="ItemName" class="form-control" asp-for="Item.ItemName" asp placeholder="Enter item name" />
+                                <label asp-for="Item.ItemName"></label>
                                 <span id="item_name_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md">
                             <div class="form-floating">
-                                <select id="item_unit" class="form-control" asp-for="ItemUnit">
-                                    @{
-                                        foreach (var option in ViewBag.UnitTypes)
-                                        {
-                                            <option value="@option">@option</option>
-                                        }
-                                    }
-                                </select>
-                                <label asp-for="ItemUnit" class="mb-2"></label>
+                                <input id="item_unit" name="ItemUnit" class="form-control" asp-for="Item.ItemUnit" asp placeholder="Enter item unit" />
+                                <label asp-for="Item.ItemUnit"></label>
                                 <span id="item_unit_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
                             </div>
                         </div>
@@ -38,16 +31,16 @@
                     <div class="row g-2">
                         <div class="col-md">
                             <div class="form-floating">
-                                <input type="number" id="item_quantity" class="form-control" asp-for="ItemQuantity" asp placeholder="Enter item quantity" />
-                                <label asp-for="ItemQuantity" class="mb-2"></label>
+                                <input type="number" name="ItemQuantity" id="item_quantity" class="form-control" asp-for="Item.ItemQuantity" asp placeholder="Enter item quantity" />
+                                <label asp-for="Item.ItemQuantity"></label>
                                 <span id="item_quantity_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md">
                             <div class="form-floating">
-                                <select id="category" class="form-control" asp-for="Category" placeholder="Select category">
+                                <select id="category" name="Category" class="form-control" asp-for="Item.Category" placeholder="Select category">
                                 </select>
-                                <label asp-for="Category" class="mb-2"></label>
+                                <label asp-for="Item.Category"></label>
                                 <span id="category_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
                             </div>
                         </div>
@@ -55,8 +48,8 @@
                     <div class="row">
                         <div class="col-md">
                             <div class="form-floating">
-                                <textarea style="padding-top: 10px;" asp-for="ItemDescription"></textarea>
-                                <label asp-for="ItemDescription" class="mb-2"></label>
+                                <textarea class="form-control" name="ItemDescription" style="padding-top: 10px;" asp-for="Item.ItemDescription"></textarea>
+                                <label asp-for="Item.ItemDescription"></label>
                             </div>
                             <span id="item_images_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
                         </div>
@@ -70,7 +63,7 @@
                                         <div>or</div>
                                         <button id="customFileUploadBtn" type="button" class="btn btn-info">Browse Files</button>
                                     </div>
-                                    <input multiple accept=".png,.jpg,.jpeg" style="position: absolute; z-index: 10; height: 100%; visibility: hidden;" type="file" id="item_images" class="form-control" asp-for="ItemImages" asp placeholder="Enter item images" />
+                                    <input multiple accept=".png,.jpg,.jpeg" style="position: absolute; z-index: 10; height: 100%; visibility: hidden;" type="file" id="item_images" class="form-control" asp-for="Item.ItemImages" asp placeholder="Enter item images" />
                                 </div>
                                 @* <label asp-for="ItemImages" class="mb-2"></label> *@
                                 <span id="item_quantity_error" style="font-size: 10px; padding-left: 10px" class="text-danger"></span>
